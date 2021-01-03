@@ -31,4 +31,5 @@ while 1==1:
     except IOError:
         time.sleep(1)
         print('Controller Not Found')
+        explorerhat.motor.one.stop()
         explorerhat.motor.two.stop()
